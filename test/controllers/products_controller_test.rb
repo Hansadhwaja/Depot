@@ -45,6 +45,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     end  
 
     assert_redirected_to products_url
+    assert_match /Line Items present/,flash[:alert]
   end  
 
 
