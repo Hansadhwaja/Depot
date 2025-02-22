@@ -54,7 +54,7 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
   
     if @product.destroy
-      flash[:notice] = "Product was successfully deleted."
+      flash[:notice] = "Product was successfully destroyed."
     else
       flash[:alert] = @product.errors.full_messages.join(", ") # Use the actual error message
     end

@@ -1,5 +1,6 @@
 @import "tailwindcss";
-@layer utilities {
+
+@layer components {
     .input-field {
       @apply
        block shadow rounded-md border border-green-400 outline-none
